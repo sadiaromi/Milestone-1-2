@@ -1,75 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Interactive Resume</title>
+    <title>Static Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="resume-container">
-        <!--Left Section-->
-        <div class="left-section">
-            <img src="profile.picture.png" alt="Profile Picture" class="profile-picture">
-            <section id="objective">
-                <h3 style="color: black;">Career Objective</h3>
-                <p style="text-align: justify;">I want to succeed in an environment of growth and excellence to meet personal and organizational goals.
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="/resume-profile.png" alt="Profile" class="profile-image">
+                <div class="name-section">
+                <h2>ROMAN SADIA</h2>
+                </div>
+                <p class="title">FRONTEND DEVELOPER</p>
+            </div>
+
+            <section class="contact-info">
+                <h3>CONTACT INFO</h3>
+                <ul>
+                <li>✉️<a href="mailto:sadiaroman28@gmail.com">Email</a></li>
+                <li>🌐<a href="https://github.com/sadiaromi">Github</a></li>
+                <li>🔗<a href="https://www.linkedin.com/in/roman-sadia-6b280a2b6">Linkedin</a></li>
+                </ul>
+
+            </section>
+
+            <section class="education">
+                <h3>EDUCATION</h3>
+                <div class="education-item">
+                    <h4>Intermediate</h4>
+                    <p>Liaquat Govt.Girls College Malir, Karachi</p>
+                </div>
+                <div class="education-item">
+                    <h4>Matric</h4>
+                    <p>Bahria Model School (Majeed S.R.E Campus)</p>
+                </div>
+            </section>
+
+
+        </aside>
+
+        <main class="main-content">
+            <section class="about">
+                <h2>About</h2>
+                <p>I am a passionate Front-End Developer with a strong understanding of HTML, CSS, Typescript and JavaScript. As a fresher, I am eager to learn and contribute to building responsive and user-friendly websites. I have a keen interest in modern web technologies and am committed to enhancing my skills to deliver excellent user experiences.
                 </p>
             </section>
 
-            <section id="Certification">
-                <h3 style="color: black;">Certifications</h3>
-                <p><b>Ms Office:</b> From World Memon Foundation Community Trust Center</p>
-                <p><b>Artificial Intelligence, Web 3.0 & Metaverse</b> From Governor House Karachi(Ongoing)</p>
+            <section class="experience">
+                <h2>EXPERIENCE</h2>
+                <div class="experience-item">
+                    
+                        <p>I am a motivated Front-End Developer with a solid understanding of HTML, CSS, and JavaScript. While I don't have formal work experience, I have worked on personal projects that showcase my ability to create responsive and visually appealing web designs. I am eager to learn, grow, and contribute to dynamic teams while continuously improving my skills.
+                        </p>
+                </div>
             </section>
 
-        </div>
-        <!-- Right Section-->
-         <div class="right-section">
-            <h1>Static Interactive Resume</h1>
-            <!-- Personal Information-->
-             <section id="personal-info">
-                <h3 s>Personal Information</h3>
-                <p><b>Name:</b> Roman Sadia</p>
-                <p><b>Phone:</b> 1234-6679812</p>
-                <p><b>Email:</b> <a href="mailto:saadr6567@gmail.com">saadr6567@gmail.com</a></p>
-                <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/roman-sadia-6b280a2b6" target="_blank">www.LlinkedIin.com</a></p>
-             </section>
-
-             <!-- Education Section-->
-              <section id="education">
-                <h3>Education</h3>
-                <p><b>Intermediate:</b> Pre-Medical From Liaquat Govt Girls College Malir, Karachi(2022-2024)</p>
-                <p><b>Matriculation:</b> (Science-Biology) From Bahria Model School Karachi</p>
+            <section class="skills" id="skills-section">
+                <h2>PROFESSIONAL SKILLS</h2>
+                <button id="toggle-skills" class="toggle-button">Toggle Skills</button>
+                <div class="skills-content" id="skills-content">
+                    <div class="skill-item">
+                        <span>HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>TypeScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <!-- Skills-->
-
-            <section id="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>Ms Office</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Typescript</li>
-                    <li>Communication Skills</li>
-                </ul>
-
-                <!-- Work Experience Ssection-->
-
-                <section id="work-experience">
-                    <h3>Work Experience</h3>
-                    <p>Seeking an opportunity as a fresh candidate to start my professional career.</p>
-                </section>
-
+            <section class="interests">
+                <h2>INTERESTS</h2>
+                <div class="interests-list">
+                    <span class="interest-item">Reading</span>
+                    <span class="interest-item">Traveling</span>
+                    <span class="interest-item">Coding</span>
+                </div>
             </section>
-        
-        <!-- Button to toggle skills section-->
-         <button id="toggle-skills"><b>Hide/Show Skills</b></button>
-        
-        </div>
+        </main>
     </div>
     <script src="script.js"></script>
-    
 </body>
 </html>
